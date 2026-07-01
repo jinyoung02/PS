@@ -1,21 +1,15 @@
 class Solution {
     public String solution(int[] food) {
-        String s = "";
-        String r = "";
-        int k = 0;
+        StringBuilder left = new StringBuilder();
 
         for (int i = 1; i < food.length; i++) {
-            k = food[i] / 2;
-
-            for (int j = 0; j < k; j++) {
-                s = s + i;
+            for (int j = 0; j < food[i] / 2; j++) {
+                left.append(i);
             }
         }
 
-        for (int a = s.length() - 1; a >= 0; a--) {
-            r = r + s.charAt(a);
-        }
+        String right = left.reverse().toString();
 
-        return s + "0" + r;
+        return left.reverse().append(0).append(right).toString();
     }
 }
