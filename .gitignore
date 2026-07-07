@@ -1,0 +1,14 @@
+.idea/
+*.iml
+out/
+
+Template/.gradle/
+Template/gradle/
+Template/build/
+Template/out/
+
+Template/build.gradle
+Template/settings.gradle
+Template/gradlew
+Template/gradlew.bat
+Template/*.iml
