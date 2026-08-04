@@ -12,3 +12,4 @@ Template/settings.gradle
 Template/gradlew
 Template/gradlew.bat
 Template/*.iml
+.DS_Store
